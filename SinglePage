@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Desafio 0 - Single Page</title>
+		
+		<link href="./css/styles.css" rel="stylesheet" type="text/css" />
+		
+		<script src="./js/cep.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>Busca CEP</h1>
+		</header>
+		
+		<main>
+			<input id="cep" type="number" pattern="[0-9]" 
+				placeholder="Digite o CEP" onkeyup="onDigitaCep()" />
+			<button disabled onclick="buscaCep()">Buscar CEP</button><br>
+			<br />
+			<p id="erro" hidden>
+				<span>CEP não encontrado/inválido</span>
+			</p>
+			<form hidden >
+			  Logradouro: <input disabled type="text" name="logradouro"><br>
+			  Bairro: <input disabled type="text" name="bairro"><br>
+			  Estado: <input disabled type="text" name="estado"><br>
+			</form>
+		</main>
+		
+	</body>
+	
+</html>
